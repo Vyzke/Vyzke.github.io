@@ -1,6 +1,6 @@
 # Project Title
 
-I dont know what this project will be 
+A short description of this project
 
 ## Installation
 
