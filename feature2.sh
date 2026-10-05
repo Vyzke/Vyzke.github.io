@@ -1,1 +1,1 @@
-#Feature 2 will able auto detect any special characters in a word and mark them as still a word for example "don't" will be counted as one word
+#Feature 2 (Special-Detector) will able auto detect any special characters in a word and mark them as still a word for example "don't" will be counted as one word
