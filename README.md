@@ -1,6 +1,6 @@
-# Project Title
+# Word & Character Counter
 
-A short description of this project
+A shell based program to count words and spaces in documents.
 
 ## Installation
 
