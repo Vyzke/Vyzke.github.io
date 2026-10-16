@@ -1,6 +1,6 @@
 # Word & Character Counter
 
-A shell based program to count words and spaces in documents.
+A word and character counter that can count pasted or entered text
 
 ## Installation
 
