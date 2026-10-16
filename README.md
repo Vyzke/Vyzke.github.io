@@ -8,7 +8,7 @@ Steps to install and run the project
 
 ## Usage
 
-Example of how to use project.
+Enter text or paste text into the prompt 
 
 ### Authors
 
