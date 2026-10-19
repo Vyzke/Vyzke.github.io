@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word & Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">TEXT TOOLS</p>
+      <h1>Word & Character Counter</h1>
+      <p class="description">Type or paste your text to see the counts update automatically.</p>
+    </header>
+
+    <label for="textInput" class="field-label">Your text</label>
+    <textarea id="textInput" placeholder="Start typing or paste your text here..." spellcheck="true"></textarea>
+
+    <div class="controls">
+      <label class="check-label" for="includeSpecial">
+        <input type="checkbox" id="includeSpecial" checked>
+        Include special characters in character count
+      </label>
+      <button type="button" id="clearButton">Clear text</button>
+    </div>
+
+    <section class="results" aria-label="Text counts" aria-live="polite">
+      <div class="result"><span id="wordCount">0</span><span>Words</span></div>
+      <div class="result"><span id="characterCount">0</span><span>Characters</span></div>
+      <div class="result"><span id="specialCount">0</span><span>Special characters</span></div>
+    </section>
+    <p class="note">Words are separated by whitespace. Spaces count as characters. Punctuation and symbols can be excluded using the checkbox.</p>
+  </main>
+</body>
+</html>

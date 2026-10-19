@@ -1,0 +1,57 @@
+# Word & Character Counter — Project Documentation
+
+## Project Description
+This project is a website that counts words and characters in text that the user types or pastes. The counts update automatically.
+
+## Feature 1: Space Detector
+**Purpose:** Detect spaces between words and calculate the total number of words.
+
+**How it works:**
+1. The user types or pastes text into the text box.
+2. The program checks for spaces, tabs, and new lines.
+3. Each group of non-space characters is counted as one word.
+4. Empty text and text with only spaces give a word count of 0.
+
+**Example:** `Operating System` -> **2 words**.
+
+Multiple spaces do not add extra words.
+
+## Feature 2: Special Detector
+**Purpose:** Find special characters and let the user choose whether to count them.
+
+**How it works:**
+1. The program checks the text for punctuation and symbols, such as `!`, `?`, `@`, `#`, and `%`.
+2. The number of special characters is displayed.
+3. The **Include special characters** checkbox controls the character total:
+   - Checked: counts all characters, including symbols and spaces.
+   - Unchecked: ignores special characters but still counts spaces.
+
+**Example:** `Hello World!`
+- Words: **2**
+- Special characters: **1** (`!`)
+- Characters with special characters included: **12**
+- Characters with special characters ignored: **11**
+
+## Files in the Project
+- `index.html` — the webpage and text box.
+- `style.css` — the appearance of the webpage.
+- `script.js` — both counting features and the checkbox.
+- `docs/PROJECT_DOCUMENTATION.md` — this documentation file.
+
+## How to Run
+1. Download the project files to the same folder, keeping `docs` inside the folder.
+2. Double-click `index.html` to open it in a web browser.
+3. Type or paste text into the box.
+4. Select or deselect the special-character checkbox to see the character total change.
+
+No software installation is required.
+
+## Simple Tests
+| Text entered | Expected words | Expected special characters | Characters with checkbox on | Characters with checkbox off |
+| --- | ---: | ---: | ---: | ---: |
+| `Operating System` | 2 | 0 | 16 | 16 |
+| `Hello World!` | 2 | 1 | 12 | 11 |
+| `Hello   World` | 2 | 0 | 13 | 13 |
+| (empty text) | 0 | 0 | 0 | 0 |
+
+**Note:** This is a *space-based* word counter, as described in the project objectives. A sequence containing only punctuation is treated as a word if separated by spaces. Spaces are included in the character count in both checkbox modes.

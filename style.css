@@ -1,0 +1,21 @@
+:root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1b2533; background: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+.container { width: min(100%, 740px); background: white; border: 1px solid #e5e9f0; border-radius: 16px; padding: clamp(20px, 5vw, 40px); box-shadow: 0 12px 35px rgba(20,40,70,.06); }
+.eyebrow { color: #4f67c9; font-size: 12px; font-weight: 800; letter-spacing: .14em; margin: 0 0 12px; }
+h1 { margin: 0; font-size: clamp(26px, 5vw, 36px); letter-spacing: -.03em; }
+.description { color: #667286; margin: 10px 0 30px; }
+.field-label { display: block; font-weight: 650; margin-bottom: 10px; }
+textarea { width: 100%; min-height: 220px; resize: vertical; border: 1px solid #cbd3df; border-radius: 10px; font: inherit; line-height: 1.6; padding: 16px; outline-offset: 2px; }
+textarea:focus { outline: 2px solid #4f67c9; border-color: transparent; }
+.controls { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin: 16px 0 24px; }
+.check-label { display: flex; gap: 9px; align-items: flex-start; font-size: 14px; }
+input { accent-color: #4f67c9; margin-top: 3px; }
+button { border: 1px solid #d9e0e8; background: #fff; border-radius: 8px; padding: 9px 15px; font: inherit; cursor: pointer; }
+button:hover { background: #f0f3fb; }
+.results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.result { background: #f3f5fa; padding: 20px 12px; border-radius: 10px; text-align: center; display: flex; flex-direction: column; gap: 6px; }
+.result span:first-child { font-size: 32px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.result span:last-child { color: #607087; font-size: 13px; }
+.note { font-size: 12px; color: #667286; line-height: 1.5; margin: 20px 0 0; }
+@media (max-width: 460px) { .results { grid-template-columns: 1fr; } .result { flex-direction: row; justify-content: space-between; align-items: center; } }
